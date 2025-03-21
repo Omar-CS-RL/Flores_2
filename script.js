@@ -10,7 +10,7 @@ function createFlower() {
     }
 
     // Número máximo de flores a crear simultáneamente (entre 1 y 5)
-    const maxFlowers = Math.ceil(Math.random() * 5 + 1);
+    const maxFlowers = Math.ceil(Math.random() * 4 + 1);
     const flowerSize = 100; // Tamaño de la flor
 
     // Arrays para almacenar las posiciones de las flores existentes
@@ -73,6 +73,7 @@ function createFlower() {
         }, disappearanceTime);
     }
 }
+
 
 // Cambia el intervalo de tiempo para controlar la aparición de las flores cada 3 segundos
 setInterval(createFlower, 1000); // Nuevas flores cada 3 segundos

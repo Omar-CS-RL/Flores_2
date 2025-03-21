@@ -13,14 +13,15 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    background-color: #f3e6fa; /* Tono suave de lila */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 2px solid #d3bce3; /* Borde lila más oscuro */
 }
 
 h1 {
     font-size: 36px;
-    color: #333333;
+    color: #5a3570; /* Tono lila oscuro para el título */
     margin-top: 20px;
     z-index: 1;
 }
@@ -60,28 +61,16 @@ h1 {
 .p9 { transform: translate(-50%, -50%) rotate(288deg); }
 .p10 { transform: translate(-50%, -50%) rotate(324deg); }
 
-/* Agrega las siguientes clases para las animaciones */
 @keyframes fadeInPetal {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeOutPetal {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 .petal {
-    /* Agrega una animación de entrada a los pétalos */
     animation: fadeInPetal 0.5s ease-in-out both;
 }
-
-
